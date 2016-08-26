@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.yihukurama</groupId>
-  <artifactId>websercice</artifactId>
+  <artifactId>webservice</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
 	<parent>
