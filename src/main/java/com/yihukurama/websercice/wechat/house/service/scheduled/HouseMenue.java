@@ -23,7 +23,7 @@ import com.yihukurama.websercice.wechat.house.domain.HouseConstants;
 public class HouseMenue {
 	
 	Menue menue;
-	@Scheduled(initialDelay=259000000,fixedRate = 259000000)
+	@Scheduled(fixedRate = 259000000)
 	public String initMenueApi(){
 		menue = new Menue();
 		

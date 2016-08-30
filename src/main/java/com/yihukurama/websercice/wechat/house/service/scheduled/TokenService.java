@@ -16,7 +16,7 @@ public class TokenService {
 	private static Wilddog ref = new Wilddog("https://houserent.wilddogio.com");
 	private Logger logger = Logger.getLogger(TokenService.class);
 	//token72小时过期重新获取
-	@Scheduled(initialDelay=259000000,fixedRate = 259000000)
+	@Scheduled(fixedRate = 259000000)
 	public String refreshToken(){
 		//刷新微信token并存入野狗
 		String url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=%s&secret=%s";
