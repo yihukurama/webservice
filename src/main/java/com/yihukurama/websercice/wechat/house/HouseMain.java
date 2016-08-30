@@ -4,8 +4,9 @@ import org.apache.log4j.Logger;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
-import com.yihukurama.websercice.wechat.CommonFunction;
+import com.yihukurama.websercice.wechat.common.CommonFunction;
 import com.yihukurama.websercice.wechat.house.domain.Constants;
 import com.yihukurama.websercice.wechat.house.service.HouseResponse;
 
@@ -15,6 +16,7 @@ import com.yihukurama.websercice.wechat.house.service.HouseResponse;
  * @author dengshuai
  *
  */
+@RestController
 public class HouseMain {
 
 	private Logger logger = Logger.getLogger(HouseMain.class);
@@ -24,7 +26,7 @@ public class HouseMain {
 	}
 	
 	@RequestMapping("/housemain")
-        String weixinhome(
+        String wetChatHome(
     		@RequestParam(value="echostr", required=false, defaultValue="null") String echostr,
     		@RequestParam(value="timestamp", required=false, defaultValue="null") String timestamp,
     		@RequestParam(value="nonce", required=false, defaultValue="null") String nonce,

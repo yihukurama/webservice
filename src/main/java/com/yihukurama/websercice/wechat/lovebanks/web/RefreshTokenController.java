@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.wilddog.client.Wilddog;
+import com.yihukurama.websercice.sdk.KeyValueDB;
 import com.yihukurama.websercice.utils.JsonUtil;
 import com.yihukurama.websercice.utils.http.HttpClientUtil;
+import com.yihukurama.websercice.wechat.entity.AccessToken;
 import com.yihukurama.websercice.wechat.house.domain.Constants;
-import com.yihukurama.websercice.wechat.lovebanks.domain.KeyValueDB;
-import com.yihukurama.websercice.wechat.lovebanks.domain.wechatapi.AccessToken;
 
 /**
  * 更新accesstoken

@@ -12,12 +12,12 @@ import com.yihukurama.websercice.wechat.lovebanks.domain.Constants;
  * @author dengshuai
  *
  */
-public class Menue {
+public class LoveMenue {
 	
 	String name;
 	List<MenuButton> button;
 	
-	public Menue(){
+	public LoveMenue(){
 		
 		MenuButton menuButton1 = new MenuButton("查看房源");
 		MenuButton menuButton2 = new MenuButton("报修中心");
@@ -45,7 +45,7 @@ public class Menue {
 		menuButton3.getSub_button().add(subButton7);
 		menuButton3.getSub_button().add(subButton8);
 		
-		button = new ArrayList<Menue.MenuButton>();
+		button = new ArrayList<LoveMenue.MenuButton>();
 		button.add(menuButton1);
 		button.add(menuButton2);
 		button.add(menuButton3);

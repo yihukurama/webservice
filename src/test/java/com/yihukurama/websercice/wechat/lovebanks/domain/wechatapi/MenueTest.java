@@ -16,7 +16,7 @@ public class MenueTest {
 
 	@Test
 	public void testCreateMenue() {
-		Menue menue = new Menue();
+		LoveMenue menue = new LoveMenue();
 		menue.createMenue();
 	}
 

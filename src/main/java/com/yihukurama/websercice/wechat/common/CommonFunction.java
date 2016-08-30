@@ -1,4 +1,4 @@
-package com.yihukurama.websercice.wechat;
+package com.yihukurama.websercice.wechat.common;
 
 import java.util.ArrayList;
 import java.util.Collections;

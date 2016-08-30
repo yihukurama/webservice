@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.yihukurama.websercice.wechat.CommonFunction;
+import com.yihukurama.websercice.wechat.common.CommonFunction;
 import com.yihukurama.websercice.wechat.house.HouseMain;
 import com.yihukurama.websercice.wechat.house.domain.Constants;
 import com.yihukurama.websercice.wechat.lovebanks.service.LoveResponse;
