@@ -1,4 +1,4 @@
-package com.yihukurama.websercice.wechat.house.web;
+package com.yihukurama.websercice.wechat.house.controller;
 
 /**
  * 缴费凭证

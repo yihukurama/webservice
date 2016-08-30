@@ -13,6 +13,7 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 
 
@@ -20,6 +21,7 @@ import org.springframework.context.annotation.Profile;
 @ComponentScan
 @EnableAutoConfiguration
 @SpringBootApplication
+@EnableScheduling
 public class Application extends SpringBootServletInitializer{
 	private Logger logger = Logger.getLogger(Application.class);
 	@Override
