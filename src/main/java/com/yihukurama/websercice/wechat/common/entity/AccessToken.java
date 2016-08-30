@@ -1,4 +1,4 @@
-package com.yihukurama.websercice.wechat.entity;
+package com.yihukurama.websercice.wechat.common.entity;
 /**
  * 微信accesstoken返回数据封装
  * @author dengshuai

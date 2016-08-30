@@ -1,4 +1,4 @@
-package com.yihukurama.websercice.wechat.entity;
+package com.yihukurama.websercice.wechat.common.entity;
 
 import java.util.List;
 

@@ -5,9 +5,9 @@ import java.util.List;
 
 import com.yihukurama.websercice.utils.JsonUtil;
 import com.yihukurama.websercice.utils.http.HttpClientUtil;
-import com.yihukurama.websercice.wechat.entity.Menue;
-import com.yihukurama.websercice.wechat.entity.Menue.MenuButton;
-import com.yihukurama.websercice.wechat.entity.Menue.SubButton;
+import com.yihukurama.websercice.wechat.common.entity.Menue;
+import com.yihukurama.websercice.wechat.common.entity.Menue.MenuButton;
+import com.yihukurama.websercice.wechat.common.entity.Menue.SubButton;
 import com.yihukurama.websercice.wechat.lovebanks.domain.Constants;
 
 /**

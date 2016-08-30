@@ -9,7 +9,7 @@ import com.wilddog.client.Wilddog;
 import com.yihukurama.websercice.sdk.KeyValueDB;
 import com.yihukurama.websercice.utils.JsonUtil;
 import com.yihukurama.websercice.utils.http.HttpClientUtil;
-import com.yihukurama.websercice.wechat.entity.AccessToken;
+import com.yihukurama.websercice.wechat.common.entity.AccessToken;
 import com.yihukurama.websercice.wechat.house.domain.Constants;
 
 /**
