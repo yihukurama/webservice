@@ -28,27 +28,24 @@ public class HouseMenue {
 		menue = new Menue();
 		
 		MenuButton menuButton1 = new MenuButton("查看房源");
-		MenuButton menuButton2 = new MenuButton("维修中心");
+		MenuButton menuButton2 = new MenuButton("报修中心");
 		MenuButton menuButton3 = new MenuButton("租客中心");
 		
-		SubButton subButton1 = new SubButton("view", "立刻入住",
-				"https://weidian.com/item_classes.html?userid=948973478&c=87465315&des=%E7%AB%8B%E5%88%BB%E5%85%A5%E4%BD%8F");
-		SubButton subButton2 = new SubButton("view", "友情转租",
-				"https://weidian.com/item_classes.html?userid=948973478&c=87465316");
-		SubButton subButton3 = new SubButton("view", "合同到期",
-				"https://weidian.com/item_classes.html?userid=948973478&c=87465317");
+		SubButton subButton1 = new SubButton("view", "真实房源",
+				"https://weidian.com/item.html?itemID=1938325808");
+		SubButton subButton2 = new SubButton("view", "购买优惠",
+				"https://weidian.com/item_classes.html?userid=984504049&c=87813717");
 		menuButton1.getSub_button().add(subButton1);
 		menuButton1.getSub_button().add(subButton2);
-		menuButton1.getSub_button().add(subButton3);
 		
-		SubButton subButton4 = new SubButton("view", "有偿报修", "https://weidian.com");
-		SubButton subButton5 = new SubButton("view", "无偿报修", "https://weidian.com");
+		SubButton subButton4 = new SubButton("view", "报修中心", "https://weidian.com/item_classes.html?userid=984504049&c=87807075");
+		SubButton subButton5 = new SubButton("view", "投诉建议", "https://im.weidian.com/chat/?from_platform=h&to_platform=a&to_user_id=984504049&im_enter=shop&im_shop_id=984504049");
 		menuButton2.getSub_button().add(subButton4);
 		menuButton2.getSub_button().add(subButton5);
 		
-		SubButton subButton6 = new SubButton("view", "本月交租", "http://www.lovebanks.cn");
-		SubButton subButton7 = new SubButton("view", "交租凭证", "http://www.lovebanks.cn");
-		SubButton subButton8 = new SubButton("view", "个人信息", "http://www.lovebanks.cn");
+		SubButton subButton6 = new SubButton("view", "本月交租", "https://weidian.com/item_classes.html?userid=984504049&c=87807076");
+		SubButton subButton7 = new SubButton("view", "交租凭证", "https://i.weidian.com/order/list.php?type=0");
+		SubButton subButton8 = new SubButton("view", "我的信息", "https://i.weidian.com/index.php?umk=984504049");
 		menuButton3.getSub_button().add(subButton6);
 		menuButton3.getSub_button().add(subButton7);
 		menuButton3.getSub_button().add(subButton8);
