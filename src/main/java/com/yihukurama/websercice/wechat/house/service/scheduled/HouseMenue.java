@@ -1,24 +1,29 @@
-package com.yihukurama.websercice.wechat.house.domain.wechatapi;
+package com.yihukurama.websercice.wechat.house.service.scheduled;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Component;
+
 import com.yihukurama.websercice.utils.JsonUtil;
 import com.yihukurama.websercice.utils.http.HttpClientUtil;
+import com.yihukurama.websercice.wechat.common.WeChatCommand;
 import com.yihukurama.websercice.wechat.common.entity.Menue;
 import com.yihukurama.websercice.wechat.common.entity.Menue.MenuButton;
 import com.yihukurama.websercice.wechat.common.entity.Menue.SubButton;
-import com.yihukurama.websercice.wechat.lovebanks.domain.Constants;
+import com.yihukurama.websercice.wechat.house.domain.HouseConstants;
 
 /**
  * 微信自定义菜单接口
  * @author dengshuai
- *
+ * 
  */
+@Component
 public class HouseMenue {
 	
 	Menue menue;
-	
+	@Scheduled(initialDelay=259000000,fixedRate = 259000000)
 	public String initMenueApi(){
 		menue = new Menue();
 		
@@ -61,8 +66,8 @@ public class HouseMenue {
 	
 
 
-	public String createMenue(){
-		String postApi = "https://api.weixin.qq.com/cgi-bin/menu/create?access_token="+Constants.accessToken;
+	private String createMenue(){
+		String postApi = WeChatCommand.getInstance().getcMenueCmd(HouseConstants.accessToken);
 		
 		String json = "";
 		try {

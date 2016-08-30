@@ -9,7 +9,7 @@ package com.yihukurama.websercice.wechat.house.domain;
  *
  * @author Dengshuai
  */
-public class Constants {
+public class HouseConstants {
 	public static final String TOKEN = "yihukurama";
     public static final String APPID = "wxeb2343c9f831f559";
     public static final String APPSECRET = "98946cb68f1e3c88855c053b1d881dbb";

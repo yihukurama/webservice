@@ -5,6 +5,8 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.yihukurama.websercice.wechat.house.service.scheduled.TokenService;
+
 public class TokenServiceTest {
 
 	@Before

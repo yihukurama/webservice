@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.yihukurama.websercice.wechat.common.CommonFunction;
 import com.yihukurama.websercice.wechat.house.HouseMain;
-import com.yihukurama.websercice.wechat.house.domain.Constants;
+import com.yihukurama.websercice.wechat.house.domain.HouseConstants;
 import com.yihukurama.websercice.wechat.lovebanks.service.LoveResponse;
 
 /**
@@ -39,7 +39,7 @@ public class LoveBanksMain {
 			response = loveResponse.response(requestBody);
 		}else{//基础认证
 			logger.info("进行微信服务器认证");
-			String checkResult = CommonFunction.check(Constants.TOKEN, timestamp, nonce);
+			String checkResult = CommonFunction.check(HouseConstants.TOKEN, timestamp, nonce);
 			if(signature.equals(checkResult)){
 				logger.info("微信服务器通过认证，按要求返回echostr");
 				response = echostr;
