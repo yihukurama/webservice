@@ -3,6 +3,7 @@ package com.yihukurama.websercice.wechat.house.service.scheduled;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
@@ -19,11 +20,9 @@ import com.yihukurama.websercice.wechat.house.domain.HouseConstants;
  * @author dengshuai
  * 
  */
-@Component
 public class HouseMenue {
-	
+	private Logger logger = Logger.getLogger(HouseMenue.class);
 	Menue menue;
-	@Scheduled(fixedRate = 259000000)
 	public String initMenueApi(){
 		menue = new Menue();
 		
@@ -55,26 +54,26 @@ public class HouseMenue {
 		button.add(menuButton2);
 		button.add(menuButton3);
 		menue.setName("button");
-		
-		return createMenue();
+		menue.setButton(button);
+		return createMenue(menue);
 	}
 	
 	
 	
 
 
-	private String createMenue(){
+	private String createMenue(Menue menue){
 		String postApi = WeChatCommand.getInstance().getcMenueCmd(HouseConstants.accessToken);
-		
 		String json = "";
 		try {
-			json = JsonUtil.beanToJson(this);
+			json = JsonUtil.beanToJson(menue);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+		logger.info("创建自定义菜单的请求是："+json);
 		String result = HttpClientUtil.doPost(postApi, json, "utf-8");
+		logger.info("创建自定义菜单微信返回是："+result);
 		return result;
 	}
 	

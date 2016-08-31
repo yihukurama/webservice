@@ -1,5 +1,6 @@
 package com.yihukurama.websercice.wechat.common.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -45,6 +46,7 @@ public class Menue {
 		List<SubButton> sub_button;
 		public MenuButton(String name){
 			this.name = name;
+			sub_button = new ArrayList<Menue.SubButton>();
 		}
 		public String getName() {
 			return name;
