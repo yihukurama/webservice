@@ -10,12 +10,15 @@ import com.yihukurama.websercice.wechat.common.CommonFunction;
 import com.yihukurama.websercice.wechat.house.domain.HouseConstants;
 import com.yihukurama.websercice.wechat.house.service.HouseResponse;
 
+import springfox.documentation.annotations.ApiIgnore;
+
 
 /**
  * 碧怡房产中介公众号主入口
  * @author dengshuai
  *
  */
+@ApiIgnore
 @RestController
 public class HouseMain {
 

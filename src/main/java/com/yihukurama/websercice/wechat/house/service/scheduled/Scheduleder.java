@@ -5,7 +5,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class Scheduleder {
 	
-	@Scheduled(fixedRate = 259000000)
 	public void refreshToken(){
 		TokenService tS = new TokenService();
 		tS.refreshToken();

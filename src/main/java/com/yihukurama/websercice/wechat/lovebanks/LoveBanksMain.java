@@ -11,11 +11,14 @@ import com.yihukurama.websercice.wechat.house.HouseMain;
 import com.yihukurama.websercice.wechat.house.domain.HouseConstants;
 import com.yihukurama.websercice.wechat.lovebanks.service.LoveResponse;
 
+import springfox.documentation.annotations.ApiIgnore;
+
 /**
  * 我的微信测试号主入口
  * @author dengshuai
  *
  */
+@ApiIgnore
 @RestController
 public class LoveBanksMain {
 	private Logger logger = Logger.getLogger(HouseMain.class);
